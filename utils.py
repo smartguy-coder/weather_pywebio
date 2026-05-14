@@ -15,9 +15,8 @@ import constants
 import config
 
 def write_logs(key: str, params: dict, result: Any):
-    with open(constants.LOG_CSV_FILE_NAME, mode="a", encoding="utf-8") as file:
-        log = f"{datetime.now()};{key};{params};{result}\n"
-        file.write(log)
+    pass
+
 
 
 def get_weather_info(city: str) -> dict:
