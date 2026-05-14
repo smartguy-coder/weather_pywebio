@@ -75,7 +75,7 @@ def send_email(
             file.set_payload(open(attachment, 'br').read())
             file.add_header('Content-Description', attachment)
             file.add_header(
-                'Content-Description',
+                'Content-Disposition',
                 f'attachment; filename={attachment}, size={filesize}',
             )
             encoders.encode_base64(file)
