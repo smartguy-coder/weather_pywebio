@@ -41,6 +41,6 @@ def main():
 start_server(
     main,
     host="0.0.0.0",
-    port=8888,
+    port=10000,
     debug=True,
 )
